@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6501292D16D90A6C008AA99A /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 6501292C16D90A6C008AA99A /* Message.m */; };
+		6501293116D9182D008AA99A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6501292E16D9182C008AA99A /* README.md */; };
+		6501293216D9182D008AA99A /* Screen shot1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6501292F16D9182C008AA99A /* Screen shot1.png */; };
+		6501293316D9182D008AA99A /* Screen shot2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6501293016D9182D008AA99A /* Screen shot2.png */; };
+		6571FD8716D8A440004CE997 /* Renkoo in Resources */ = {isa = PBXBuildFile; fileRef = 6571FD8616D8A440004CE997 /* Renkoo */; };
+		658D06F216D8A74500B5DCAA /* Template.html in Resources */ = {isa = PBXBuildFile; fileRef = 658D06F116D8A74500B5DCAA /* Template.html */; };
 		65F8E54116D87E2D00B55C0F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F8E54016D87E2C00B55C0F /* UIKit.framework */; };
 		65F8E54316D87E2D00B55C0F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F8E54216D87E2D00B55C0F /* Foundation.framework */; };
 		65F8E54516D87E2D00B55C0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F8E54416D87E2D00B55C0F /* CoreGraphics.framework */; };
@@ -23,6 +29,7 @@
 		65F8E56716D87E2D00B55C0F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F8E54216D87E2D00B55C0F /* Foundation.framework */; };
 		65F8E56F16D87E2D00B55C0F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65F8E56D16D87E2D00B55C0F /* InfoPlist.strings */; };
 		65F8E57216D87E2D00B55C0F /* StyledChatDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F8E57116D87E2D00B55C0F /* StyledChatDemoTests.m */; };
+		65F8E57F16D897F400B55C0F /* MessageStyleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F8E57E16D897F300B55C0F /* MessageStyleManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +43,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6501292B16D90A6B008AA99A /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
+		6501292C16D90A6C008AA99A /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
+		6501292E16D9182C008AA99A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		6501292F16D9182C008AA99A /* Screen shot1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen shot1.png"; sourceTree = "<group>"; };
+		6501293016D9182D008AA99A /* Screen shot2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen shot2.png"; sourceTree = "<group>"; };
+		6571FD8616D8A440004CE997 /* Renkoo */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Renkoo; sourceTree = "<group>"; };
+		658D06F116D8A74500B5DCAA /* Template.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Template.html; sourceTree = "<group>"; };
 		65F8E53D16D87E2C00B55C0F /* StyledChatDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StyledChatDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65F8E54016D87E2C00B55C0F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		65F8E54216D87E2D00B55C0F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -58,6 +72,8 @@
 		65F8E56E16D87E2D00B55C0F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		65F8E57016D87E2D00B55C0F /* StyledChatDemoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StyledChatDemoTests.h; sourceTree = "<group>"; };
 		65F8E57116D87E2D00B55C0F /* StyledChatDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StyledChatDemoTests.m; sourceTree = "<group>"; };
+		65F8E57D16D897F300B55C0F /* MessageStyleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MessageStyleManager.h; path = ../MessageStyleManager.h; sourceTree = "<group>"; };
+		65F8E57E16D897F300B55C0F /* MessageStyleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MessageStyleManager.m; path = ../MessageStyleManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,8 +133,15 @@
 		65F8E54616D87E2D00B55C0F /* StyledChatDemo */ = {
 			isa = PBXGroup;
 			children = (
+				6501292E16D9182C008AA99A /* README.md */,
+				6501292F16D9182C008AA99A /* Screen shot1.png */,
+				6501293016D9182D008AA99A /* Screen shot2.png */,
 				65F8E54F16D87E2D00B55C0F /* AppDelegate.h */,
 				65F8E55016D87E2D00B55C0F /* AppDelegate.m */,
+				6501292B16D90A6B008AA99A /* Message.h */,
+				6501292C16D90A6C008AA99A /* Message.m */,
+				65F8E57D16D897F300B55C0F /* MessageStyleManager.h */,
+				65F8E57E16D897F300B55C0F /* MessageStyleManager.m */,
 				65F8E55816D87E2D00B55C0F /* ViewController.h */,
 				65F8E55916D87E2D00B55C0F /* ViewController.m */,
 				65F8E55B16D87E2D00B55C0F /* ViewController.xib */,
@@ -130,6 +153,8 @@
 		65F8E54716D87E2D00B55C0F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				658D06F116D8A74500B5DCAA /* Template.html */,
+				6571FD8616D8A440004CE997 /* Renkoo */,
 				65F8E54816D87E2D00B55C0F /* StyledChatDemo-Info.plist */,
 				65F8E54916D87E2D00B55C0F /* InfoPlist.strings */,
 				65F8E54C16D87E2D00B55C0F /* main.m */,
@@ -236,6 +261,11 @@
 				65F8E55516D87E2D00B55C0F /* Default@2x.png in Resources */,
 				65F8E55716D87E2D00B55C0F /* Default-568h@2x.png in Resources */,
 				65F8E55D16D87E2D00B55C0F /* ViewController.xib in Resources */,
+				6571FD8716D8A440004CE997 /* Renkoo in Resources */,
+				658D06F216D8A74500B5DCAA /* Template.html in Resources */,
+				6501293116D9182D008AA99A /* README.md in Resources */,
+				6501293216D9182D008AA99A /* Screen shot1.png in Resources */,
+				6501293316D9182D008AA99A /* Screen shot2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +303,8 @@
 				65F8E54D16D87E2D00B55C0F /* main.m in Sources */,
 				65F8E55116D87E2D00B55C0F /* AppDelegate.m in Sources */,
 				65F8E55A16D87E2D00B55C0F /* ViewController.m in Sources */,
+				65F8E57F16D897F400B55C0F /* MessageStyleManager.m in Sources */,
+				6501292D16D90A6C008AA99A /* Message.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,6 +485,7 @@
 				65F8E57716D87E2D00B55C0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65F8E57816D87E2D00B55C0F /* Build configuration list for PBXNativeTarget "StyledChatDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -461,6 +494,7 @@
 				65F8E57A16D87E2D00B55C0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
