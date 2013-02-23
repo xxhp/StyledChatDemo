@@ -2,8 +2,8 @@
 //  Message.h
 //  StyledChatDemo
 //
-//  Created by xiaohaibo on 13-2-23.
-//  Copyright (c) 2013年 xiaohaibo. All rights reserved.
+//  Created by xiao haibo on 13-2-23.
+//  Copyright (c) 2013年 xiao haibo. All rights reserved.
 //
 //  Permission is hereby granted, free of charge, to any person
 //  obtaining a copy of this software and associated documentation
