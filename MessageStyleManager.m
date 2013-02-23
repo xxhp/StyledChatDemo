@@ -49,7 +49,6 @@ static MessageStyleManager* sharedInstance = nil;
                 @"Renkoo/Variants/Green on Red Alternating.css",	//Variant path
                 @"",
                 (@"")];
-    NSLog(@"%@",baseHTML);
     NSString * contentOutHTMLpath =  [[NSBundle mainBundle] pathForResource:@"Content" ofType:@"html" inDirectory:@"Renkoo/Outgoing"];
     contentOutHTML =  [NSString stringWithContentsOfFile:contentOutHTMLpath encoding:NSUTF8StringEncoding error:nil];
     NSString * contentInHTMLpath =  [[NSBundle mainBundle] pathForResource:@"Content" ofType:@"html" inDirectory:@"Renkoo/Incoming"];
