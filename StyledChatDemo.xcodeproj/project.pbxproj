@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		6501292D16D90A6C008AA99A /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 6501292C16D90A6C008AA99A /* Message.m */; };
-		6501293116D9182D008AA99A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6501292E16D9182C008AA99A /* README.md */; };
-		6501293216D9182D008AA99A /* Screen shot1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6501292F16D9182C008AA99A /* Screen shot1.png */; };
-		6501293316D9182D008AA99A /* Screen shot2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6501293016D9182D008AA99A /* Screen shot2.png */; };
 		6571FD8716D8A440004CE997 /* Renkoo in Resources */ = {isa = PBXBuildFile; fileRef = 6571FD8616D8A440004CE997 /* Renkoo */; };
 		658D06F216D8A74500B5DCAA /* Template.html in Resources */ = {isa = PBXBuildFile; fileRef = 658D06F116D8A74500B5DCAA /* Template.html */; };
+		65F5D8B916D9A5F0001791AA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 65F5D8B616D9A5F0001791AA /* README.md */; };
+		65F5D8BA16D9A5F0001791AA /* Screen shot1.png in Resources */ = {isa = PBXBuildFile; fileRef = 65F5D8B716D9A5F0001791AA /* Screen shot1.png */; };
+		65F5D8BB16D9A5F0001791AA /* Screen shot2.png in Resources */ = {isa = PBXBuildFile; fileRef = 65F5D8B816D9A5F0001791AA /* Screen shot2.png */; };
 		65F8E54116D87E2D00B55C0F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F8E54016D87E2C00B55C0F /* UIKit.framework */; };
 		65F8E54316D87E2D00B55C0F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F8E54216D87E2D00B55C0F /* Foundation.framework */; };
 		65F8E54516D87E2D00B55C0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F8E54416D87E2D00B55C0F /* CoreGraphics.framework */; };
@@ -45,11 +45,11 @@
 /* Begin PBXFileReference section */
 		6501292B16D90A6B008AA99A /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
 		6501292C16D90A6C008AA99A /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
-		6501292E16D9182C008AA99A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		6501292F16D9182C008AA99A /* Screen shot1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen shot1.png"; sourceTree = "<group>"; };
-		6501293016D9182D008AA99A /* Screen shot2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen shot2.png"; sourceTree = "<group>"; };
 		6571FD8616D8A440004CE997 /* Renkoo */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Renkoo; sourceTree = "<group>"; };
 		658D06F116D8A74500B5DCAA /* Template.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Template.html; sourceTree = "<group>"; };
+		65F5D8B616D9A5F0001791AA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		65F5D8B716D9A5F0001791AA /* Screen shot1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen shot1.png"; sourceTree = "<group>"; };
+		65F5D8B816D9A5F0001791AA /* Screen shot2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen shot2.png"; sourceTree = "<group>"; };
 		65F8E53D16D87E2C00B55C0F /* StyledChatDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StyledChatDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65F8E54016D87E2C00B55C0F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		65F8E54216D87E2D00B55C0F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -103,6 +103,9 @@
 		65F8E53416D87E2C00B55C0F = {
 			isa = PBXGroup;
 			children = (
+				65F5D8B616D9A5F0001791AA /* README.md */,
+				65F5D8B716D9A5F0001791AA /* Screen shot1.png */,
+				65F5D8B816D9A5F0001791AA /* Screen shot2.png */,
 				65F8E54616D87E2D00B55C0F /* StyledChatDemo */,
 				65F8E56A16D87E2D00B55C0F /* StyledChatDemoTests */,
 				65F8E53F16D87E2C00B55C0F /* Frameworks */,
@@ -133,9 +136,6 @@
 		65F8E54616D87E2D00B55C0F /* StyledChatDemo */ = {
 			isa = PBXGroup;
 			children = (
-				6501292E16D9182C008AA99A /* README.md */,
-				6501292F16D9182C008AA99A /* Screen shot1.png */,
-				6501293016D9182D008AA99A /* Screen shot2.png */,
 				65F8E54F16D87E2D00B55C0F /* AppDelegate.h */,
 				65F8E55016D87E2D00B55C0F /* AppDelegate.m */,
 				6501292B16D90A6B008AA99A /* Message.h */,
@@ -263,9 +263,9 @@
 				65F8E55D16D87E2D00B55C0F /* ViewController.xib in Resources */,
 				6571FD8716D8A440004CE997 /* Renkoo in Resources */,
 				658D06F216D8A74500B5DCAA /* Template.html in Resources */,
-				6501293116D9182D008AA99A /* README.md in Resources */,
-				6501293216D9182D008AA99A /* Screen shot1.png in Resources */,
-				6501293316D9182D008AA99A /* Screen shot2.png in Resources */,
+				65F5D8B916D9A5F0001791AA /* README.md in Resources */,
+				65F5D8BA16D9A5F0001791AA /* Screen shot1.png in Resources */,
+				65F5D8BB16D9A5F0001791AA /* Screen shot2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
