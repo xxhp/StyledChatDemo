@@ -65,7 +65,7 @@
 							<object class="IBUITextField" id="23151570">
 								<reference key="NSNextResponder" ref="314606513"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{54, 7}, {209, 30}}</string>
+								<string key="NSFrame">{{54, 7}, {203, 30}}</string>
 								<reference key="NSSuperview" ref="314606513"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView"/>
@@ -909,14 +909,6 @@
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
 				<object class="IBPartialClassDescription">
-					<string key="className">CustomTextFiled</string>
-					<string key="superclassName">UITextField</string>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/CustomTextFiled.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
 					<string key="className">NSLayoutConstraint</string>
 					<string key="superclassName">NSObject</string>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
@@ -927,17 +919,30 @@
 				<object class="IBPartialClassDescription">
 					<string key="className">ViewController</string>
 					<string key="superclassName">UIViewController</string>
-					<object class="NSMutableDictionary" key="actions">
-						<string key="NS.key.0">send:</string>
-						<string key="NS.object.0">id</string>
-					</object>
-					<object class="NSMutableDictionary" key="actionInfosByName">
-						<string key="NS.key.0">send:</string>
-						<object class="IBActionInfo" key="NS.object.0">
+					<dictionary class="NSMutableDictionary" key="actions">
+						<string key="cancelSetting:">id</string>
+						<string key="changeTheme:">id</string>
+						<string key="insertEmotion:">id</string>
+						<string key="send:">id</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="actionInfosByName">
+						<object class="IBActionInfo" key="cancelSetting:">
+							<string key="name">cancelSetting:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="changeTheme:">
+							<string key="name">changeTheme:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="insertEmotion:">
+							<string key="name">insertEmotion:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="send:">
 							<string key="name">send:</string>
 							<string key="candidateClassName">id</string>
 						</object>
-					</object>
+					</dictionary>
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="msgTextField">CustomTextFiled</string>
 						<string key="settingTableView">UITableView</string>
