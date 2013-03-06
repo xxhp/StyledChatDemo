@@ -36,7 +36,34 @@
 static MessageStyleManager* sharedInstance = nil;
 
 @implementation MessageStyleManager
-@synthesize baseHTML,baseURL;
+@synthesize baseHTML,baseURL,emotions;
+- (NSDictionary *)emotions {
+    static NSDictionary *dic;
+    if (!dic) {
+        NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"Emoticons" ofType:@"plist"];
+        dic = [[NSDictionary alloc] initWithContentsOfFile:plistPath];
+    }
+    
+    return dic;
+    
+}
+-(NSMutableArray*)emotionKeysFrom:(NSString *)message{
+   
+    NSMutableArray *substrings = [NSMutableArray new];
+    NSScanner *scanner = [NSScanner scannerWithString:message];
+    [scanner scanUpToString:@"[" intoString:nil];  
+    while(![scanner isAtEnd]) {
+        NSString *substring = nil;
+        [scanner scanString:@"[" intoString:nil];  
+        if([scanner scanUpToString:@"]" intoString:&substring]) {
+             
+            [substrings addObject:substring];
+        }
+        [scanner scanUpToString:@"[" intoString:nil];  
+    }
+    return substrings;
+
+}
 -(void)loadTemplate{
     NSString *path = [[NSBundle mainBundle] bundlePath];
     NSString *path2 = [[NSBundle mainBundle] pathForResource:@"Template" ofType:@"html"];
@@ -110,6 +137,15 @@ static MessageStyleManager* sharedInstance = nil;
 
     newHTML = [newHTML stringByReplacingOccurrencesOfString:@"%sender%" withString:msg.sender];
     newHTML = [newHTML stringByReplacingOccurrencesOfString:@"%time%" withString:msg.timeStamp];
+   
+    for (NSString *emo in [self emotionKeysFrom:msg.content]){
+         
+        if ([self.emotions valueForKey:emo]) {
+             
+            msg.content = [msg.content stringByReplacingOccurrencesOfString:[NSString stringWithFormat:@"[%@]",emo] withString:[NSString stringWithFormat:@"<img src=\"%@\" , width = 25, height = 25>",[self.emotions valueForKey:emo]]] ;
+        }
+        
+    }
     newHTML = [newHTML stringByReplacingOccurrencesOfString:@"%message%" withString:msg.content];
     
     return [NSString stringWithFormat:APPEND_MESSAGE, [self _escapeStringForPassingToScript:newHTML]];

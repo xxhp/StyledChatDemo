@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>&gt;:o</key>
+	<string>angry.png</string>
+	<key>:-[</key>
+	<string>blush.png</string>
+	<key>:&apos;(</key>
+	<string>cry.png</string>
+	<key>:-!</key>
+	<string>scared.png</string>
+	<key>:-(</key>
+	<string>sad.png</string>
+	<key>=-O</key>
+	<string>gasp.png</string>
+	<key>:-D</key>
+	<string>grin.png</string>
+	<key>O:-)</key>
+	<string>angel.png</string>
+	<key>:-*</key>
+	<string>kiss.png</string>
+	<key>:-x</key>
+	<string>wub.png</string>
+	<key>:-$</key>
+	<string>money.png</string>
+	<key>:-)</key>
+	<string>smile.png</string>
+	<key>:-p</key>
+	<string>tongue.png</string>
+	<key>:-\</key>
+	<string>erm.png</string>
+	<key>8-)</key>
+	<string>cool.png</string>
+	<key>;-)</key>
+	<string>wink.png</string>
+</dict>
+</plist>

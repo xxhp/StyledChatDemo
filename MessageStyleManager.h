@@ -47,8 +47,10 @@
 	NSString	*statusHTML;
 	NSString	*fileTransferHTML;
 	NSString	*topicHTML;
+    NSDictionary *emotions;
 
 }
+@property(nonatomic,strong)NSDictionary *emotions;
 @property(nonatomic,strong)NSURL *baseURL;
 @property(nonatomic,strong)NSString	*baseHTML;
 + (MessageStyleManager*)sharedInstance;

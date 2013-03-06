@@ -29,13 +29,17 @@
 
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>{
+#import "CustomTextFiled.h"
+#import "Message.h"
+#import "EmotionPicker.h"
+@interface ViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,EmotionPickerDelegate>{
     NSArray *styleArray;
-
+    NSMutableString *str;
+    Message *message;
+    EmotionPicker *picker;
 }
 @property (strong, nonatomic) IBOutlet UIToolbar *toolBar;
-@property (strong, nonatomic) IBOutlet UITextField *msgTextField;
+@property (strong, nonatomic) IBOutlet CustomTextFiled *msgTextField;
 @property (strong, nonatomic) IBOutlet UIWebView *webView;
 @property (strong, nonatomic) IBOutlet UITableView *settingTableView;
 @property (strong, nonatomic) IBOutlet UIView *settingView;

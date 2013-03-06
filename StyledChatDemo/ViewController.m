@@ -30,7 +30,8 @@
 #import "MessageStyleManager.h"
 #import "ViewController.h"
 #import "Message.h"
-
+#import <QuartzCore/QuartzCore.h>
+static int i = 0;
 @interface ViewController ()
 
 @end
@@ -64,14 +65,14 @@
     [UIView beginAnimations:nil context:nil];
     [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
     [UIView setAnimationDuration:0.3];
-    [self.toolBar setFrame:CGRectMake(0, 480 - 260-20, 320, 44)];
+    [self.toolBar setFrame:CGRectMake(0, [UIScreen mainScreen].bounds.size.height - 260-20, [UIScreen mainScreen].bounds.size.width, 44)];
     [UIView commitAnimations];
 }
 -(void)hideShowKeyboard{
     [UIView beginAnimations:nil context:nil];
     [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
     [UIView setAnimationDuration:0.3];
-    [self.toolBar setFrame:CGRectMake(0, 480 - 44-20, 320, 44)];
+    [self.toolBar setFrame:CGRectMake(0, [UIScreen mainScreen].bounds.size.height - 44-20, [UIScreen mainScreen].bounds.size.width, 44)];
     [UIView commitAnimations];
     
 }
@@ -82,7 +83,44 @@
     [self.webView stringByEvaluatingJavaScriptFromString:appendScript];
     
 }
+#pragma mark emotionPickerDelegate
+
+-(void)emotionPicker:(id)controller didSelectedEmotion:(NSString *)emtion{
+    if (picker) {
+        [picker dismissViewControllerAnimated:NO completion:^{
+            picker = nil;
+        }];
+        
+    }
+    if (self.msgTextField.text) {
+        self.msgTextField.text = [NSString stringWithFormat:@"%@[%@]",self.msgTextField.text,emtion];
+    }else{
+        self.msgTextField.text = [NSString stringWithFormat:@"[%@]",emtion];
+    }
+}
+-(void)emotionPickerCancelled{
+    if (picker) {
+        [picker dismissViewControllerAnimated:NO completion:^{
+            picker = nil;
+        }];
+    
+    }
+
+}
+
 #pragma mark - IBActions
+- (IBAction)insertEmotion:(id)sender {
+    [self.msgTextField resignFirstResponder];
+    if (!picker) {
+        picker = [[EmotionPicker alloc] init];
+        picker.delegate = self;
+    }
+    [self presentViewController:picker animated:NO completion:^{
+    }];
+  
+    
+}
+
 - (IBAction)changeTheme:(id)sender {
     [self.view addSubview:self.settingView];
     
@@ -91,26 +129,31 @@
     [self.settingView removeFromSuperview];
 }
 - (IBAction)send:(id)sender {
-    static int i = 0;
+   
     
-    Message *msg = [[Message alloc] init];
+    if (!message) {
+        message = [[Message alloc] init];
+    }
     if (i%2 == 0) {
-        msg.isOut = YES;
-        msg.sender = @"me";
+        message.isOut = YES;
+        message.sender = @"me";
     }
     else{
-        msg.isOut = NO;
-        msg.sender = @"others";
+        message.isOut = NO;
+        message.sender = @"others";
     }
+    message.content = self.msgTextField.text? self.msgTextField.text:@"  ";
+    
     i++;
-    msg.content = self.msgTextField.text? self.msgTextField.text:@"  ";
-    msg.timeStamp = [NSDateFormatter localizedStringFromDate:[NSDate date]
+   
+    message.timeStamp = [NSDateFormatter localizedStringFromDate:[NSDate date]
                                                             dateStyle:NSDateFormatterShortStyle
                                                             timeStyle:NSDateFormatterShortStyle];;
-    [self appendMessage:msg];
+    [self appendMessage:message];
 
     [self.msgTextField resignFirstResponder];
     [self.msgTextField setText:nil];
+    
 }
 #pragma mark - UITableView dataSource & delegate
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
